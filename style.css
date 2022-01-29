@@ -5,7 +5,7 @@ html, body{
     text-align: center;
 }
 .clock{
-    width: 200px; margin: 5px auto;
+    width: 180px; margin: 5px auto;
     border: 2px solid black;
-    border-radius: 10px;
+    border-radius: 50px;
 }
