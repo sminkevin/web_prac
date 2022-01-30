@@ -1,67 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang = "en">
-<head>
-    <meta charset='UTF-8'>
-    <meta name="viewport"
-    content="width=devicd-width, initial-scale=1.0">
-    <title>이승민의 사이트</title>
-    <link rel='stylesheet' href='main.css'>
-    <link rel='stylesheet' href='style.css'>
-    <div class="container">
-        <h2>현재 시각</h2>
-    </div>
-</head>
-<body>
 
-    <div class="container">
-        <div class="clock">
-            <h1 id="time"></h1>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name="viewport"
+        content="width=devicd-width, initial-scale=1.0">
+        <title>이승민의 사이트</title>
+        <link rel='stylesheet' href='main.css'>
+        <link rel='stylesheet' href='style.css'>
+        <div class="container">
+            <h2>현재 시각</h2>
         </div>
-    </div>
-
-    <script src="script.js"></script>
+    </head>
 
 
-
-    <div class='alert-box' id='alert'>알림창이 열렸다 !
-
-        <button onclick = "change_back_orange()"; style='color:orange'>주황색 배경</button>
-        <button onclick = "change_back_black()"; style='color:black'>검은색 배경</button>
-        <button onclick = "change_red()"; style='color:red'>빨간색 글자</button>
-        <button onclick = "change_blue()"; style='color:blue'>파란색 글자</button>
-        <button onclick = "change_white()"; style='color:white'>흰색 글자</button>
-        <button onclick="close_and_reset_alert()"; style='background-color:purple; color:white'>초기화 후 닫기</button>
-    </div>
-
-    <button onclick="open_alert()">열기</button>
-    
-    <script>
-
-        function open_alert(){
-            document.getElementById('alert').style.display = 'block';
-        }
-        function close_and_reset_alert(){
-            document.getElementById('alert').style.display = 'none';
-            document.getElementById('alert').style.backgroundColor = 'black';
-            document.getElementById('alert').style.color = 'white';
-        }
-        function change_white(){
-            document.getElementById('alert').style.color = 'white';
-        }
-        function change_red(){
-            document.getElementById('alert').style.color = 'red';
-        }
-        function change_blue(){
-            document.getElementById('alert').style.color = 'blue';
-        }
-        function change_back_black(){
-            document.getElementById('alert').style.backgroundColor = 'black';
-        }
-        function change_back_orange(){
-            document.getElementById('alert').style.backgroundColor = 'orange';
-        }
+    <body>
+        <div class="tree">
+            <div class="top" style="--j:0;">
+                <span style="--i:0;"></span>
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span stlye="--i:3;"></span>
+            </div>
+            <div class="top" style="--j:1;">
+                <span style="--i:0;"></span>
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span stlye="--i:3;"></span>
+            </div>
+            <div class="top" style="--j:2;">
+                <span style="--i:0;"></span>
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span stlye="--i:3;"></span>
+            </div>
+            <div class="top" style="--j:3;">
+                <span style="--i:0;"></span>
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span stlye="--i:3;"></span>
+            </div>
+            <div class="bottom">
+                <span style="--i:0;"></span>
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span stlye="--i:3;"></span>
+            </div>
+            
+        </div>
 
 
-    </script>
-</body>
+        <div class="container">
+            <div class="clock">
+                <h1 id="time"></h1>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+
+
+
+
+        <div class='alert-box' id='alert'>알림창이 열렸다 !
+
+            <button onclick = "change_back_orange()"; style='color:orange'>주황색 배경</button>
+            <button onclick = "change_back_black()"; style='color:black'>검은색 배경</button>
+            <button onclick = "change_red()"; style='color:red'>빨간색 글자</button>
+            <button onclick = "change_blue()"; style='color:blue'>파란색 글자</button>
+            <button onclick = "change_white()"; style='color:white'>흰색 글자</button>
+            <button onclick="close_and_reset_alert()"; style='background-color:purple; color:white'>초기화 후 닫기</button>
+        </div>
+
+        <button onclick="open_alert()">열기</button>
+        
+
+
+        <script>
+
+            function open_alert(){
+                document.getElementById('alert').style.display = 'block';
+            }
+            function close_and_reset_alert(){
+                document.getElementById('alert').style.display = 'none';
+                document.getElementById('alert').style.backgroundColor = 'black';
+                document.getElementById('alert').style.color = 'white';
+            }
+            function change_white(){
+                document.getElementById('alert').style.color = 'white';
+            }
+            function change_red(){
+                document.getElementById('alert').style.color = 'red';
+            }
+            function change_blue(){
+                document.getElementById('alert').style.color = 'blue';
+            }
+            function change_back_black(){
+                document.getElementById('alert').style.backgroundColor = 'black';
+            }
+            function change_back_orange(){
+                document.getElementById('alert').style.backgroundColor = 'orange';
+            }
+
+
+        </script>
+
+
+    </body>
+
+
 </html>
